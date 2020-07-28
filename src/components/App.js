@@ -9,6 +9,7 @@ import AllUsers from './AllUsers'
 import CreateBlog from './CreateBlog';
 import ShowBlog from './ShowBlog'
 import UserBlogs from './UserBlogs.js'
+import Error from './Error.js'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path='/CreateBlog' exact component={CreateBlog} />
             <Route path='/Blog/:id' exact component={ShowBlog} />
             <Route path='/User/:id' exact component={UserBlogs} />
+            <Route path='/*' exact component={Error} />
           </Switch>
         </div>
       </Router>
